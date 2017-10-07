@@ -14,11 +14,22 @@
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colorPrimary"
         android:id="@+id/toolbarMain"/>
-
-<!--Content Fragment-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--wallpaper-->
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <!--Content Fragment-->
     <FrameLayout
         android:id="@+id/contentfragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
 
 </LinearLayout>
